@@ -1,0 +1,18 @@
+/.idea
+
+# Ignore the gradle build cache
+.gradle/
+
+# Ignore Android Studio
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+
+# Ignore all Gradle related files with the exception of gradle-wrapper.properties
+!gradle/wrapper/gradle-wrapper.properties
+
+
