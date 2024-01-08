@@ -23,7 +23,7 @@ public class CustomerService {
         // todo: check if customer already exists
         // todo: check is email is valid
         FraudCheckResponse fraudCheckResponse = this.restTemplate.getForObject(
-                "http://localhost:8081/api/fraud-check/{customerId}"
+                "http://FRAUD/api/fraud-check/{customerId}"
                 , FraudCheckResponse.class, customer.getId());
         // todo: send email
         if (fraudCheckResponse.isFraudulent()) {
