@@ -1,1 +1,7 @@
-/Users/essejacques.co/projects/Formations/microservices/customer/src/main/java/co/essejacques/CustomerApp.java
+/Users/essejacques.co/projects/Formations/microservices/customer/src/main/java/co/essejacques/customer/CustomerApp.java
+/Users/essejacques.co/projects/Formations/microservices/customer/src/main/java/co/essejacques/customer/CustomerController.java
+/Users/essejacques.co/projects/Formations/microservices/customer/src/main/java/co/essejacques/customer/CustomerRegistrationRequest.java
+/Users/essejacques.co/projects/Formations/microservices/customer/src/main/java/co/essejacques/customer/CustomerService.java
+/Users/essejacques.co/projects/Formations/microservices/customer/src/main/java/co/essejacques/customer/CustomerRepository.java
+/Users/essejacques.co/projects/Formations/microservices/customer/src/main/java/co/essejacques/customer/CustomerConfig.java
+/Users/essejacques.co/projects/Formations/microservices/customer/src/main/java/co/essejacques/customer/Customer.java
