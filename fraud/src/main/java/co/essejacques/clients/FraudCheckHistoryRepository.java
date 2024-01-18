@@ -1,4 +1,4 @@
-package co.essejacques.fraud;
+package co.essejacques.clients;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

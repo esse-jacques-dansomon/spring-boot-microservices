@@ -1,4 +1,4 @@
-package co.essejacques.fraud;
+package co.essejacques.clients;
 
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
