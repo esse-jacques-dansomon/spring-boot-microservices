@@ -15,9 +15,10 @@
     <modules>
         <module>customer</module>
         <module>fraud</module>
-        <module>server-eureka</module>
         <module>clients</module>
         <module>notification</module>
+        <module>server-eureka</module>
+        <module>apigateway-server</module>
     </modules>
 
     <properties>
