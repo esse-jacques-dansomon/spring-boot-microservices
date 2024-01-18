@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
 @Log4j2
 public class CustomerService {
     private final CustomerRepository customerRepository;
-    private final RestTemplate restTemplate;
+//    private final RestTemplate restTemplate;
     private final FraudClient fraudCheckService;
     private final NotificationClient emailService;
 
