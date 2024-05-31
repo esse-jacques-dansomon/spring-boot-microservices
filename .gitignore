@@ -1,3 +1,7 @@
+customer/target/*
+clients/target/*
+fraud/target/*
+notification/target/*
 /.idea
 
 # Ignore the gradle build cache
@@ -14,5 +18,7 @@
 
 # Ignore all Gradle related files with the exception of gradle-wrapper.properties
 !gradle/wrapper/gradle-wrapper.properties
+
+
 
 
