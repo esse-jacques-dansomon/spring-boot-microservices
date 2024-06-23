@@ -10,7 +10,6 @@
     <name>amqp-server</name>
     <packaging>jar</packaging>
 
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
