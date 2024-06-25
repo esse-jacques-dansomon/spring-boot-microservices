@@ -1,11 +1,14 @@
 server:
   port: 8082
+  servlet:
+    context-path: /api/v1
+
 spring:
   application:
     name: notification
   datasource:
     password: postgres
-    url: jdbc:postgresql://postgres:5432/notification
+    url: jdbc:postgresql://localhost:5432/notification
     username: postgres
   jpa:
     hibernate:
@@ -23,9 +26,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka-server:8761/eureka
-    fetch-registry: true
-    register-with-eureka: true
-    enabled: false
 
 rabbitmq:
   exchanges:

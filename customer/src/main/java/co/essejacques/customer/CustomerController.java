@@ -3,10 +3,10 @@ package co.essejacques.customer;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Slf4j
 @RestController
@@ -20,5 +20,11 @@ public class CustomerController{
     public void register(@RequestBody CustomerRegistrationRequest customerRequest) {
         log.info("Registering customer: {}", customerRequest);
         customerService.register(customerRequest);
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Customer>> getAllCustomer() {
+        return ResponseEntity
+                .ok(customerService.getAll());
     }
 }

@@ -9,6 +9,8 @@ import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @AllArgsConstructor
 @Log4j2
@@ -54,5 +56,9 @@ public class CustomerService {
 
         log.info("Registered customer: {}", customer);
 
+    }
+
+    public List<Customer> getAll() {
+        return customerRepository.findAll();
     }
 }

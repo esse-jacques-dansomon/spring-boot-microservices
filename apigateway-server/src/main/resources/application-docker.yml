@@ -1,7 +1,10 @@
 server:
   port: 8060
+  servlet:
+    context-path: /api/v1
 
 spring:
+
   application:
     name: api-gateway
   zipkin:
@@ -18,5 +21,3 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka-server:8761/eureka
-    fetch-registry: true
-    register-with-eureka: true
