@@ -1,5 +1,6 @@
 package co.essejacques.customer;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @AllArgsConstructor
 @RequestMapping("/customers")
+@Tag(name = "customers", description = "customers API")
 public class CustomerController{
 
     private final CustomerService customerService;

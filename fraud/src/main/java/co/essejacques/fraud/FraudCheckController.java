@@ -1,4 +1,4 @@
-package co.essejacques.clients;
+package co.essejacques.fraud;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;

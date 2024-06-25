@@ -15,5 +15,5 @@ RUN chown -R appuser:appgroup $APP_HOME
 USER appuser
 
 # Expose the port and start the application
-EXPOSE 8080
+EXPOSE 8081
 CMD ["java", "-jar", "app.jar"]

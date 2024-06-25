@@ -1,4 +1,4 @@
-package com.essejacques.app.notification;
+package co.essejacques.clients.notification;
 
 
 import lombok.AllArgsConstructor;

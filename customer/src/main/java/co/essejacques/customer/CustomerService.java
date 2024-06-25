@@ -1,16 +1,13 @@
 package co.essejacques.customer;
 
 import co.essejacques.amqp.RabbitMQMessageProducer;
-import com.essejacques.app.fraud.FraudCheckResponse;
-import com.essejacques.app.fraud.FraudClient;
-import com.essejacques.app.notification.NotificationClient;
-import com.essejacques.app.notification.NotificationRequest;
+import co.essejacques.clients.fraud.FraudCheckResponse;
+import co.essejacques.clients.fraud.FraudClient;
+import co.essejacques.clients.notification.NotificationClient;
+import co.essejacques.clients.notification.NotificationRequest;
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
-
-import javax.management.Notification;
 
 @Service
 @AllArgsConstructor

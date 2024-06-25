@@ -1,4 +1,4 @@
-package com.essejacques.app.fraud;
+package co.essejacques.fraud;
 
 public record FraudCheckResponse(Boolean isFraudulent) {
 }

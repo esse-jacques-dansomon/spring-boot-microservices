@@ -1,4 +1,4 @@
-package co.essejacques.clients;
+package co.essejacques.fraud;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
