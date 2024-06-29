@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @FeignClient(
         name = "FRAUD",
-//        url = "${clients.fraud.url}",
+        url = "${clients.fraud.url}",
         path = "/api/v1/fraud-check")
 public interface FraudClient {
 

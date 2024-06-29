@@ -47,35 +47,32 @@ services:
     networks:
       - spring
 
-  eureka-server:
-    image: essejacquesdansomon/server-eureka:local
-    container_name: eureka-server
-    environment:
-      - SPRING_PROFILES_ACTIVE=docker
-      - EUREKA_SERVER_URL=http://eureka-server:8761/eureka
-    networks:
-      - spring
-    ports:
-      - "8761:8761"
-    depends_on:
-      - zipkin
-
-  apigateway:
-    image: essejacquesdansomon/apigw:local
-    container_name: apigateway-server
-    ports:
-      - "8060:8060"
-    environment:
-      - SPRING_PROFILES_ACTIVE=docker
-      - SERVER_PORT=8060
-#      - spring.zipkin.base-url=http://zipkin:9411
-#      - eureka.client.service-url.default-zone= http://eureka-server:8761/eureka
+#  eureka-server:
+#    image: essejacquesdansomon/server-eureka:local
+#    container_name: eureka-server
+#    environment:
+#      - SPRING_PROFILES_ACTIVE=docker
 #      - EUREKA_SERVER_URL=http://eureka-server:8761/eureka
-    networks:
-      - spring
-    depends_on:
-      - zipkin
-      - eureka-server
+#    networks:
+#      - spring
+#    ports:
+#      - "8761:8761"
+#    depends_on:
+#      - zipkin
+#
+#  apigateway:
+#    image: essejacquesdansomon/apigw:local
+#    container_name: apigateway-server
+#    ports:
+#      - "8060:8060"
+#    environment:
+#      - SPRING_PROFILES_ACTIVE=docker
+#      - SERVER_PORT=8060
+#    networks:
+#      - spring
+#    depends_on:
+#      - zipkin
+#      - eureka-server
 
   customer:
     image: essejacquesdansomon/customer:local
@@ -85,13 +82,6 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - SERVER_PORT=8080
-#      - spring.zipkin.base-url=http://zipkin:9411
-#      - eureka.client.service-url.default-zone= http://eureka-server:8761/eureka
-#      - spring.datasource.url=jdbc:postgresql://postgres:5432/customer
-#      - spring.datasource.username=postgres
-#      - spring.datasource.password=postgres
-#      - EUREKA_SERVER_URL=http://eureka-server:8761/eureka
-#      - server.servlet.context-path=/api/v1/
     networks:
       - spring
       - postgres
@@ -108,10 +98,6 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - SERVER_PORT=8081
-#      - server.servlet.context-path=/api/v1/
-#      - spring.zipkin.base-url=http://zipkin:9411
-#      - eureka.client.service-url.default-zone= http://eureka-server:8761/eureka
-#      - EUREKA_SERVER_URL=http://eureka-server:8761/eureka
     networks:
       - spring
       - postgres
@@ -128,8 +114,6 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - SERVER_PORT=8082
-#      - server.servlet.context-path=/api/v1/
-#      - EUREKA_SERVER_URL=http://eureka-server:8761/eureka
     networks:
       - spring
       - postgres

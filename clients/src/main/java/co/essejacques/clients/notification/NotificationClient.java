@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @FeignClient(
         name = "NOTIFICATION",
-//        url = "${clients.notification.url}",
+        url = "${clients.notification.url}",
         path = "/api/v1/notification")
 public interface NotificationClient {
 

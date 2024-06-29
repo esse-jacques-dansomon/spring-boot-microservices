@@ -3,6 +3,7 @@ clients/target/*
 fraud/target/*
 notification/target/*
 /.idea
+.vscode/
 
 # Ignore the gradle build cache
 .gradle/
